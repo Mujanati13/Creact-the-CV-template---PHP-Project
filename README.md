@@ -1,4 +1,4 @@
-# Complete cv maker create by dev106 team 
+# CV Template ✍️
 ### Taple of contents: 
 <ol>
   <li> <a href="#intro">Introduction</a></li>
@@ -9,7 +9,7 @@
   <li> <a href="#ui">Made better user experience</a></li>
 </ol>
 
-# <div id="intro">Introduction</div>
+## <div id="intro">Introduction</div>
 <p>
   
 </p>
