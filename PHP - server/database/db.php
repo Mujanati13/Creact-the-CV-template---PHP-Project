@@ -1,14 +1,24 @@
+<!-- <?php
+// $servername = "localhost";
+// $username = "root";
+// $password = "1234";
+// $db = "template";
+
+// // connect db
+// $db = mysqli_connect($servername , $username , $password , $db);
+
+// $query = "insert into
+//  user(fullName , age, address, phone_number, email, password, state_date) 
+//  values('mohammed janati', 18 , 'massira', '0606690217', 'simo@gmail.com' , '1234' , current_date); ";
+?> -->
+
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "simo1234";
+$password = "1234";
+$dbs = "template";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=CVtemplate", $username, $password); // can with the simple way include the connection between the pages with using the clobal varaibles (include('path name'))
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
+// Create connection
+$db = mysqli_connect($servername, $username, $password , $dbs);
+mysqli_query($db , "select * from user");
 ?>
