@@ -7,7 +7,7 @@ CREATE TABLE user {
 	email varchar(40) not null unique,
 	password varchar(50) not null,
 	state_date date not null default current_date, -- started date
-	NTHtemplateCV int, -- how much the user create Cv's 
+	NTHtemplateCV int, 
 }
 
 
