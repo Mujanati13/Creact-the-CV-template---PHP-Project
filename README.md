@@ -9,7 +9,7 @@
   <li> <a href="#ui">Made better user experience</a></li>
 </ol>
 
-# <dvi id="intro">Introduction</div>
+<div id="intro">Introduction</div>
 <p>
   
 </p>
