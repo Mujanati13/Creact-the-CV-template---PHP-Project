@@ -53,9 +53,11 @@ a {
 	opacity: 0.9;
 	cursor: pointer;
 }
-
+.login-header li.active a{
+	color: white;
+}
 .login-header li.active {
-	background-color: rgba(0, 0, 255, 0.815);
+	background-color: rgba(0, 0, 255, 0.46);
 	border-radius: 4px;
 	padding: 10px 30px;
 	width: 130;
@@ -69,12 +71,25 @@ a {
 	align-items: center;
 	flex-direction: row;
 	margin-bottom: 100px;
-	margin-right: 20px;
 }
 
 .imgs {
 	display: flex;
 	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.imgs {
+	width: 70%;
+	display: flex;
+}
+
+.imgs img:hover{
+	width: 280px;
+	height: 400px;
+	transition: all 0.5s ease;
+	z-index: 100;
+	cursor: pointer;
 }
 
 .imgs img {
@@ -107,7 +122,7 @@ img[alt='cv1'] {
 }
 
 .description-home-content {
-	width: 100%;
+	width: 30%;
 	margin: auto;
 }
 
@@ -132,12 +147,13 @@ img[alt='cv1'] {
 	font-size: 25px;
 	letter-spacing: 1px;
 	padding: 5px 20px;
-	color: black;
+	color: rgba(0, 0, 0, 0.81);
 	font-weight: 100;
 	/* background-color: #a200ff; */
+	border: 1px solid rgba(0, 0, 0, 0.142);
 	border-radius: 40px;
 	cursor: pointer;
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	/*box-shadow: rgba(0, 0, 0, 0.0001) 1.95px 1.95px 2.6px; */
 }
 
 .observation-contineur {
