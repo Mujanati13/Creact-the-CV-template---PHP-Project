@@ -37,20 +37,25 @@ q3.addEventListener('click', function () {
 	}
 });
 
-/**
- * this about the send msg btn 
- */
+const btnSend = document.getElementById('btn-send');
+const btnnext = document.getElementById('btn-sends');
+const thanks = document.querySelector('.thanks-div');
+const secondSearchf = document.querySelector('.B');
+ 
+function btnSendfun(){
+	const searchF = document.querySelector('.search-field');
+	setTimeout(() => {
+		searchF.style.display = 'none';
+		secondSearchf.style.display = 'block';
+	}, 500);
+}
 
-/* const btn  = document.querySelector('.search-field button');
-const div = document.querySelector('.search-field');
-btn.addEventListener('click' ,function(){
-	const searchF = document.querySelector('.search-field input');
-	btn.innerHTML = "Next";
-	searchF.style.display = "none";
-	const newE = document.createElement('input');
-	newE.setAttribute('class' , 'search-field input');
-	btn.style.width = "60px";
-	btn.style.height = "30px";
-	btn.style.marginTop = "20px";
-	div.append(newE);
-}); */
+function btnNextStep(){
+	setTimeout(() => {
+		secondSearchf.style.display = 'none';
+		thanks.style.display = 'block';
+	}, 500);
+}
+
+btnnext.addEventListener('click' , btnNextStep)
+btnSend.addEventListener('click' , btnSendfun)

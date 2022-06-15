@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 a {
@@ -70,6 +71,7 @@ a {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
+	flex-wrap: wrap-reverse;
 	margin-bottom: 100px;
 }
 
@@ -77,6 +79,8 @@ a {
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
+	position: relative;
+	left: 140px;
 }
 
 .imgs {
@@ -95,7 +99,6 @@ a {
 .imgs img {
 	width: 250px;
 	height: 350px;
-	border-radius: 20px;
 }
 
 img[alt='cv3'] {
@@ -108,7 +111,7 @@ img[alt='cv3'] {
 img[alt='cv2'] {
 	position: relative;
 	right: 90px;
-	top: 20px;
+	top: ;
 	opacity: 0.9;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -117,7 +120,6 @@ img[alt='cv1'] {
 	margin-left: 0px;
 	position: relative;
 	left: 0px;
-	top: 40px;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
@@ -129,7 +131,6 @@ img[alt='cv1'] {
 .description-home-content p {
 	width: 100%;
 	position: relative;
-	right: 50px;
 	font-weight: 100;
 }
 
@@ -143,7 +144,6 @@ img[alt='cv1'] {
 }
 
 .btn-get-started {
-	margin-left: 25px;
 	font-size: 25px;
 	letter-spacing: 1px;
 	padding: 5px 20px;
@@ -154,6 +154,7 @@ img[alt='cv1'] {
 	border-radius: 40px;
 	cursor: pointer;
 	/*box-shadow: rgba(0, 0, 0, 0.0001) 1.95px 1.95px 2.6px; */
+	margin-top: 10px;
 }
 
 .observation-contineur {
@@ -229,6 +230,8 @@ img[alt='cv1'] {
 
 .search-field {
 	margin: auto;
+	animation: blug;
+	transition: all 1s ease;
 }
 
 .question-side-client p {
@@ -247,6 +250,10 @@ img[alt='cv1'] {
 	margin-bottom: 40px;
 }
 
+.B {
+	display: none;
+}
+
 .search-field input , .search-field1{
 	outline: none;
 	margin-right: 10px;
@@ -257,7 +264,7 @@ img[alt='cv1'] {
 	border: 1px solid rgba(0, 0, 0, 0.213);
 }
 
-.search-field button {
+.search-field button , #btn-sends{
 	padding: 0px 10px;
 	font-size: 15px;
 	font-weight: 600;
@@ -274,6 +281,7 @@ img[alt='cv1'] {
 	letter-spacing: 2px;
 	font-weight: 500;
 	margin: auto;
+	margin-top: 10px;
 	opacity: 1;
 }
 
@@ -289,16 +297,6 @@ img[alt='cv1'] {
 	cursor: pointer;
 	border: 0.5px solid rgba(0, 0, 0, 0.148);
 
-}
-
-@keyframes ol {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
 
 .en1,
@@ -340,4 +338,16 @@ img[alt='cv1'] {
 
 .footer-page-princepal ul li:hover{
 	opacity: 1;
+}
+
+.thanks-div {
+	width: 50%;
+	font-size:15px ;
+	margin: auto;
+	background-color: rgba(0, 128, 0, 0.056);
+	text-align: center;
+	display: none;
+	margin-top: 20px;
+	padding: 5px 0px;
+	border-radius:4px;
 }
