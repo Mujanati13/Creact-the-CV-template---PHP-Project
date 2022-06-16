@@ -59,3 +59,14 @@ function btnNextStep(){
 
 btnnext.addEventListener('click' , btnNextStep)
 btnSend.addEventListener('click' , btnSendfun)
+
+
+const clickVersion = document.querySelector('li.version-li-title');
+const showVersion = document.querySelector('.version');
+
+clickVersion.addEventListener('click' , ()=>{
+	if(showVersion.style.display == "none")
+		showVersion.style.display = "block";
+	else 
+		showVersion.style.display = "none";
+})

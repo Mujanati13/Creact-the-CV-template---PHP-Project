@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 * {
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
+}
+
+.content-of-page-princepal {
+	margin-top: 20px;
 }
 
 a {
@@ -21,12 +24,10 @@ a {
 .header {
 	width: 100%;
 	margin-left: 0;
-	margin-top: 50px;
 	margin-bottom: 80px;
 	margin-right: 0;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-between;
 }
 
@@ -40,8 +41,11 @@ a {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-between;
+}
+
+.menu-header ul {
+	margin-top: 20px;
 }
 
 .menu-header li,
@@ -60,10 +64,14 @@ a {
 .login-header li.active {
 	background-color: rgba(0, 0, 255, 0.46);
 	border-radius: 4px;
-	padding: 10px 30px;
+	padding: 5px 30px;
 	width: 130;
 	color: white;
 	font-size: 18px;
+}
+
+.log-header {
+	margin-top:15px;
 }
 
 .home-content-page {
@@ -111,7 +119,6 @@ img[alt='cv3'] {
 img[alt='cv2'] {
 	position: relative;
 	right: 90px;
-	top: ;
 	opacity: 0.9;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -226,12 +233,14 @@ img[alt='cv1'] {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 30px;
+	overflow: hidden;
 }
 
 .search-field {
 	margin: auto;
 	animation: blug;
 	transition: all 1s ease;
+	overflow: hidden;
 }
 
 .question-side-client p {
@@ -350,4 +359,12 @@ img[alt='cv1'] {
 	margin-top: 20px;
 	padding: 5px 0px;
 	border-radius:4px;
+}
+
+.version {
+	margin-top: 10px;
+	background-color: rgba(0, 128, 0, 0.09);
+	padding: 5px 5px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
